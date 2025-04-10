@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Login from "./Login";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -9,7 +10,12 @@ function App() {
       .then((data) => setMessage(data));
   }, []);
 
-  return <h1>{message}</h1>;
+  return (
+    <div>
+      <h1>{message}</h1>
+      <Login />
+    </div>
+  );
 }
 
 export default App;

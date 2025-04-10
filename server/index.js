@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('HoloHire backend running!');
+  res.send('HoloHire backend is must running!');
 });
 
 const PORT = process.env.PORT || 5002;
